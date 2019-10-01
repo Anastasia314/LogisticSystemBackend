@@ -1,0 +1,2 @@
+# LogisticSystemBackend
+Spring MVC + Hibernate
