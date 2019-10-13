@@ -1,45 +1,73 @@
 package by.bsuir.logisticback.model.entity;
 
-import lombok.*;
 
 import javax.persistence.*;
-import java.util.List;
-
 
 @Entity
-@Table(name = "users")
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+@Table(name = "user", schema = "logistics", catalog = "")
 public class User {
     @Id
+    @Column(name = "id", nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column
-    private long id;
+    private int id;
 
-    @Column
+    @Basic
+    @Column(name = "login", nullable = false, length = 255)
     private String login;
 
-    @Column
+    @Basic
+    @Column(name = "password", nullable = false, length = 255)
     private String password;
 
-    @Column
-    private boolean enabled;
+    @Basic
+    @Column(name = "role", nullable = false, length = 255)
+    private String role;
 
-    @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(
-            name = "user_role",
-            joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"),
-            inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id")
-    )
-    @EqualsAndHashCode.Exclude
-    @ToString.Exclude
-    private List<Role> roles;
 
-    public User(long id, String login, String password, boolean enabled) {
+
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
         this.id = id;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
         this.login = login;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
         this.password = password;
-        this.enabled = enabled;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", login='" + login + '\'' +
+                ", password='" + password + '\'' +
+                ", role='" + role + '\'' +
+                '}';
     }
 }
+
+
