@@ -77,13 +77,17 @@ public class PropertyController {
 
     @RequestMapping(value = "/client/showClient", method = RequestMethod.POST)
     public String getListRoutes(@ModelAttribute("routeUser") RouteUser routeUser) {
-        Integer start = ((Points) pointsService.getByLoginP(routeUser.getStart())).getIdPoint();
-        Integer end = ((Points) pointsService.getByLoginP(routeUser.getEnd())).getIdPoint();
-        this.routeArrayList = (List<Route>) routeService.getRouteByEndStart(start, end);
-        for (Route r : this.routeArrayList) {
-            System.out.println(r.getNameOfRoute());
+        Points pointStart = (Points) pointsService.getByLoginP(routeUser.getStart());
+        Points pointEnd = (Points) pointsService.getByLoginP(routeUser.getEnd());
+        if (pointStart != null && pointEnd != null) {
+            Integer start = pointStart.getIdPoint();
+            Integer end = pointEnd.getIdPoint();
+            this.routeArrayList = (List<Route>) routeService.getRouteByEndStart(start, end);
+            for (Route r : this.routeArrayList) {
+                System.out.println(r.getNameOfRoute());
+            }
+            priceList = (List<Price>) routeService.listOfRoute(routeArrayList, routeUser.getMass());
         }
-        priceList = (List<Price>) routeService.listOfRoute(routeArrayList, routeUser.getMass());
         return "redirect:http://localhost:8080/show_routes";
     }
 

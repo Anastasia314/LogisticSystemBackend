@@ -8,7 +8,7 @@
 
 <html>
 <head>
-    <title>Transporters a Transportation Category Flat Bootstrap Responsive Website Template | Contact :: W3layouts</title>
+    <title>Logistic back</title>
 
     <link rel="stylesheet" href="<c:url value="/resources/res/css/bootstrap.css" />"/>
     <link rel="stylesheet" href="<c:url value="/resources/res/css/style.css" />"/>
@@ -31,7 +31,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <h1><a href="index.html">Transporters</a></h1>
+            <h1><a href="../index.jsp">Transporters</a></h1>
         </div>
         <div class="top-nav-text">
             <div class="nav-contact-w3ls"><i class="fa fa-phone" aria-hidden="true"></i><p>+375(44) 000-00-00</p></div>
@@ -77,7 +77,7 @@
                         <div class="col-md-12">
                             <h1 class="h2 page-header"
                                 style="color:#8d1645; font-family: 'Lobster', cursive; margin-top: -1px;
-                        text-align: center;">Target point/h1>
+                        text-align: center;">Target point</h1>
                             <section class="main">
 
 

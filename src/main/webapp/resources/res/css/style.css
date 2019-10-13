@@ -356,7 +356,7 @@ input.checkbox:checked:after {
 }
 .navbar-default {
   background:none;
-  border-color: #012231;
+  border-color: #D1D1D1;
 }
 .navbar-default .navbar-brand {
 	color:#fff !important;
@@ -436,7 +436,7 @@ a.navbar-brand span {
     padding: 0px 0;
 }
 .header {
-    background: #232323;
+    background: #D1D1D1;
 	padding:0 2em;
 }
 /*--//header--*/

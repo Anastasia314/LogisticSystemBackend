@@ -7,7 +7,7 @@
 
 <html>
 <head>
-    <title>Transporters a Transportation Category Flat Bootstrap Responsive Website Template | Contact :: W3layouts</title>
+    <title>Logistic</title>
 
     <link rel="stylesheet" href="<c:url value="/resources/res/css/bootstrap.css" />"/>
     <link rel="stylesheet" href="<c:url value="/resources/res/css/style.css" />"/>

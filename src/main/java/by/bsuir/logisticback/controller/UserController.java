@@ -76,7 +76,7 @@ public class UserController {
     public String listUsers(@ModelAttribute("use") User user) {
         if (this.userService.getByLogin(user.getLogin())) {
             currentUser = (User) this.userService.getByLoginP(user.getLogin());
-            if (currentUser.getRole().equals("Supplier"))
+            if (currentUser.getRole().equals("Customer"))
                 return "redirect:http://localhost:8080/client";
             else
                 return "redirect:http://localhost:8080/carrier";

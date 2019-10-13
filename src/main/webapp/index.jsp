@@ -158,6 +158,500 @@
 
 
 
+<div class="banner-bottom">
+  <div class="col-md-7 bannerbottomleft">
+    <div class="video-grid-single-page-agileits">
+      <div data-video="d3q5mRA5djY" id="video"> <img src="resources/res/images/bg2.jpg" alt="" class="img-responsive" /> </div>
+    </div>
+  </div>
+  <div class="col-md-5 bannerbottomright">
+    <h3>How Does We Work?</h3>
+    <p>Logistic System is a leading worldwide provider of transportation,
+      logistics and supply chain solutions.</p>
+    <h4><i class="fa fa-taxi" aria-hidden="true"></i>International Transport Deliver System</h4>
+    <h4><i class="fa fa-shield" aria-hidden="true"></i>Fast & Best Deliver Service</h4>
+    <h4><i class="fa fa-ticket" aria-hidden="true"></i>Standard Courier value</h4>
+    <h4><i class="fa fa-space-shuttle" aria-hidden="true"></i>Easy And Auto Shipping Service</h4>
+    <h4><i class="fa fa-truck" aria-hidden="true"></i>Packaging & Storage</h4>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<!-- //banner-bottom -->
+
+<!-- team -->
+<div class="team" id="team">
+  <div class="container">
+    <div class="heading">
+      <h3>Our Dealers</h3>
+    </div>
+    <div class="wthree_team_grids">
+      <div class="col-md-3 wthree_team_grid">
+        <div class="hovereffect">
+          <img src="resources/res/images/team1.jpg" alt=" " class="img-responsive" />
+          <div class="overlay">
+            <h6>Transporters</h6>
+            <div class="rotate">
+              <p class="group1">
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </p>
+              <hr>
+              <hr>
+              <p class="group2">
+                <a href="#">
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-dribbble"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <h4>Max Payne</h4>
+        <p>Transport Dealer</p>
+      </div>
+      <div class="col-md-3 wthree_team_grid">
+        <div class="hovereffect">
+          <img src="resources/res/images/team2.jpg" alt=" " class="img-responsive" />
+          <div class="overlay">
+            <h6>Transporters</h6>
+            <div class="rotate">
+              <p class="group1">
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </p>
+              <hr>
+              <hr>
+              <p class="group2">
+                <a href="#">
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-dribbble"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <h4>Michael Lii</h4>
+        <p>Transport Dealer</p>
+      </div>
+      <div class="col-md-3 wthree_team_grid">
+        <div class="hovereffect">
+          <img src="resources/res/images/team3.jpg" alt=" " class="img-responsive" />
+          <div class="overlay">
+            <h6>Transporters</h6>
+            <div class="rotate">
+              <p class="group1">
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </p>
+              <hr>
+              <hr>
+              <p class="group2">
+                <a href="#">
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-dribbble"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <h4>Mark</h4>
+        <p>Transport Dealer</p>
+      </div>
+      <div class="col-md-3 wthree_team_grid">
+        <div class="hovereffect">
+          <img src="resources/res/images/team4.jpg" alt=" " class="img-responsive" />
+          <div class="overlay">
+            <h6>Transporters</h6>
+            <div class="rotate">
+              <p class="group1">
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </p>
+              <hr>
+              <hr>
+              <p class="group2">
+                <a href="#">
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-dribbble"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <h4>John smith</h4>
+        <p>Transport Dealer</p>
+      </div>
+      <div class="clearfix"> </div>
+    </div>
+  </div>
+</div>
+<!-- //team -->
+
+<!-- Clients -->
+<div class=" col-md-6 clients">
+  <h3>Testimonials</h3>
+  <section class="slider">
+    <div class="flexslider">
+      <ul class="slides">
+        <li>
+          <div class="client">
+            <img src="resources/res/images/t1.jpg" alt="" />
+            <h5>Brian Fantana</h5>
+            <div class="clearfix"> </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
+
+        </li>
+        <li>
+          <div class="client">
+            <img src="resources/res/images/t2.jpg" alt="" />
+            <h5>Brick Tamland</h5>
+            <div class="clearfix"> </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
+
+        </li>
+        <li>
+          <div class="client">
+            <img src="resources/res/images/t3.jpg" alt="" />
+            <h5>Ron Burgundy</h5>
+            <div class="clearfix"> </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
+
+        </li>
+        <li>
+          <div class="client">
+            <img src="resources/res/images/t4.jpg" alt="" />
+            <h5>Arturo Mendez</h5>
+            <div class="clearfix"> </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
+
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
+<!-- //Clients -->
+<!-- Counter -->
+<div class="col-md-6 services-bottom">
+  <div class="col-md-6 agileits_w3layouts_about_counter_left">
+    <div class="countericon">
+      <i class="fa fa-truck" aria-hidden="true"></i>
+    </div>
+    <div class="counterinfo">
+      <p class="counter">1126</p>
+      <h3>Transport vehicles</h3>
+    </div>
+    <div class="clearfix"> </div>
+  </div>
+  <div class="col-md-6 agileits_w3layouts_about_counter_left">
+    <div class="countericon">
+      <i class="fa fa-fighter-jet" aria-hidden="true"></i>
+    </div>
+    <div class="counterinfo">
+      <p class="counter">180</p>
+      <h3>International Service</h3>
+    </div>
+    <div class="clearfix"> </div>
+  </div>
+  <div class="clearfix"> </div>
+  <div class="col-md-6 agileits_w3layouts_about_counter_left">
+    <div class="countericon">
+      <i class="fa fa-calendar" aria-hidden="true"></i>
+    </div>
+    <div class="counterinfo">
+      <p class="counter">20</p>
+      <h3>Years Of Service</h3>
+    </div>
+    <div class="clearfix"> </div>
+  </div>
+  <div class="col-md-6 agileits_w3layouts_about_counter_left">
+    <div class="countericon">
+      <i class="fa fa-user" aria-hidden="true"></i>
+    </div>
+    <div class="counterinfo">
+      <p class="counter">800</p>
+      <h3>Happy clients</h3>
+    </div>
+    <div class="clearfix"> </div>
+  </div>
+  <div class="clearfix"> </div>
+</div>
+<div class="clearfix"> </div>
+<!-- //Counter -->
+
+
+<!-- our blog -->
+<section class="blog" id="blog">
+  <div class="container">
+    <div class="heading">
+      <h3>Latest News</h3>
+    </div>
+    <div class="blog-grids">
+      <div class="col-md-4 blog-grid">
+        <a href="#" data-toggle="modal" data-target="#myModal"><img src="resources/res/images/bg4.jpg" alt="" /></a>
+        <h5>June 10,2017</h5>
+        <h4><a href="#" data-toggle="modal" data-target="#myModal">Road Way Transport</a></h4>
+        <p> Lorem ipsum dolor sit amet, consectetur adipi scingelit. Vestibulum orci justo, vehicula vel sapien et, feugiat sapien. Integer sit amet.</p>
+        <div class="readmore-w3">
+          <a class="readmore" href="#" data-toggle="modal" data-target="#myModal">Read More</a>
+        </div>
+      </div>
+      <div class="col-md-4 blog-grid">
+        <a href="#" data-toggle="modal" data-target="#myModal"><img src="resources/res/images/bg7.jpg" alt="" /></a>
+        <h5>June 17,2017</h5>
+        <h4><a href="#" data-toggle="modal" data-target="#myModal">Water Way Transport</a></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipi scingelit. Vestibulum orci justo, vehicula vel sapien et, feugiat tristique.</p>
+        <div class="readmore-w3">
+          <a class="readmore" href="#" data-toggle="modal" data-target="#myModal">Read More</a>
+        </div>
+      </div>
+      <div class="col-md-4 blog-grid">
+        <a href="#" data-toggle="modal" data-target="#myModal"><img src="resources/res/images/bg8.jpg" alt="" /></a>
+        <h5>June 26,2017</h5>
+        <h4><a href="#" data-toggle="modal" data-target="#myModal">Rail Transport</a></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipi scingelit. Vestibulum orci justo, vehicula vel sapien et, feugiat sapien. Integer sit amet.</p>
+        <div class="readmore-w3">
+          <a class="readmore" href="#" data-toggle="modal" data-target="#myModal">Read More</a>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</section>
+<!-- //our blog -->
+
+<!-- footer -->
+<footer>
+  <div class="agileits-w3layouts-footer">
+    <div class="container">
+      <div class="col-md-4 w3-agile-grid">
+        <h5>About Us</h5>
+        <p>Logistic System is a leading worldwide provider of transportation, logistics and supply chain solutions.</p>
+        <div class="footer-agileinfo-social">
+          <ul>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+            <li><a href="#"><i class="fa fa-vk"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-4 w3-agile-grid">
+        <h5>Address</h5>
+        <div class="w3-address">
+          <div class="w3-address-grid">
+            <div class="w3-address-left">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="w3-address-right">
+              <h6>Phone Number</h6>
+              <p>+0(12) 000-00-00</p>
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+          <div class="w3-address-grid">
+            <div class="w3-address-left">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </div>
+            <div class="w3-address-right">
+              <h6>Email Address</h6>
+              <p>Email :<a href="mailto:example@email.com"> mail@example.com</a></p>
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+          <div class="w3-address-grid">
+            <div class="w3-address-left">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </div>
+            <div class="w3-address-right">
+              <h6>Location</h6>
+              <p> SE10 8JQ, Greenwich Road, London.
+                Telephone : +0(12) 444 262 399
+              </p>
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 w3-agile-grid">
+        <h5>Recent Posts</h5>
+        <div class="w3ls-post-grids">
+          <div class="w3ls-post-grid">
+            <div class="w3ls-post-img">
+              <a href="#"><img src="resources/res/images/p1.jpg" alt="" /></a>
+            </div>
+            <div class="w3ls-post-info">
+              <h6><a href="#" data-toggle="modal" data-target="#myModal">Donec vel sapien in erat</a></h6>
+              <p>June 10,2017</p>
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+          <div class="w3ls-post-grid">
+            <div class="w3ls-post-img">
+              <a href="#"><img src="resources/res/images/p2.jpg" alt="" /></a>
+            </div>
+            <div class="w3ls-post-info">
+              <h6><a href="#" data-toggle="modal" data-target="#myModal">Donec vel sapien in erat</a></h6>
+              <p>June 17,2017</p>
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+          <div class="w3ls-post-grid">
+            <div class="w3ls-post-img">
+              <a href="#"><img src="resources/res/images/p3.jpg" alt="" /></a>
+            </div>
+            <div class="w3ls-post-info">
+              <h6><a href="#" data-toggle="modal" data-target="#myModal">Donec vel sapien in erat</a></h6>
+              <p>June 26,2017</p>
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+          <div class="w3ls-post-grid">
+            <div class="w3ls-post-img">
+              <a href="#"><img src="resources/res/images/p1.jpg" alt="" /></a>
+            </div>
+            <div class="w3ls-post-info">
+              <h6><a href="#" data-toggle="modal" data-target="#myModal">Donec vel sapien in erat</a></h6>
+              <p>June 26,2017</p>
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"> </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="container">
+      <p>© 2019 Minsk Logistic System </p>
+    </div>
+  </div>
+</footer>
+<!-- //footer -->
+
+
+
+<!-- js-scripts -->
+<!-- start-smoth-scrolling -->
+<script src="resources/res/js/SmoothScroll.min.js"></script>
+<script type="text/javascript" src="resources/res/js/move-top.js"></script>
+<script type="text/javascript" src="resources/res/js/easing.js"></script>
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+    $(".scroll").click(function(event){
+      event.preventDefault();
+      $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+    });
+  });
+</script>
+<!-- here stars scrolling icon -->
+<script type="text/javascript">
+  $(document).ready(function() {
+    /*
+        var defaults = {
+        containerID: 'toTop', // fading element id
+        containerHoverID: 'toTopHover', // fading element hover id
+        scrollSpeed: 1200,
+        easingType: 'linear'
+        };
+    */
+
+    $().UItoTop({ easingType: 'easeOutQuart' });
+
+  });
+</script>
+<!-- //here ends scrolling icon -->
+<!-- start-smoth-scrolling -->
+
+<!-- Baneer-js -->
+<script src="resources/res/js/responsiveslides.min.js"></script>
+<script>
+  $(function () {
+    $("#slider").responsiveSlides({
+      auto: true,
+      pager:false,
+      nav: true,
+      speed: 1000,
+      namespace: "callbacks",
+      before: function () {
+        $('.events').append("<li>before event fired.</li>");
+      },
+      after: function () {
+        $('.events').append("<li>after event fired.</li>");
+      }
+    });
+  });
+</script>
+<!-- //Baneer-js -->
+
+<!-- banner bottom video script -->
+<script src="resources/res/js/simplePlayer.js"></script>
+<script>
+  $("document").ready(function() {
+    $("#video").simplePlayer();
+  });
+</script>
+<!-- //banner bottom video script -->
+
+<!-- Stats-Number-Scroller-Animation-JavaScript -->
+<script src="resources/res/js/waypoints.min.js"></script>
+<script src="resources/res/js/counterup.min.js"></script>
+<script>
+  jQuery(document).ready(function( $ ) {
+    $('.counter').counterUp({
+      delay: 100,
+      time: 1000
+    });
+  });
+</script>
+<!-- //Stats-Number-Scroller-Animation-JavaScript -->
+
+
+<!-- FlexSlider-JavaScript -->
+<script defer src="resources/res/js/jquery.flexslider.js"></script>
+<script type="text/javascript">
+  $(function(){
+    SyntaxHighlighter.all();
+  });
+  $(window).load(function(){
+    $('.flexslider').flexslider({
+      animation: "slide",
+      start: function(slider){
+        $('body').removeClass('loading');
+      }
+    });
+  });
+</script>
+<!-- //FlexSlider-JavaScript -->
+
 <!-- //js-scripts -->
 </body>
 </html>

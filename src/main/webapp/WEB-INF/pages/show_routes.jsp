@@ -75,16 +75,16 @@
                     <div class="col-md-12">
                         <h1 class="h2 page-header"
                             style="color:#8d1645; font-family: 'Lobster', cursive; margin-top: -1px;
-                        text-align: center;">Пункт прибытия/назначения</h1>
+                        text-align: center;">Target point</h1>
                         <section class="main">
 
                             <c:if test="${!empty listRoutes}">
                                 <table class="tg">
                                     <tr>
                                         <th width="40">ID</th>
-                                        <th width="240">Название маршрута</th>
-                                        <th width="120">Цена доставки товара</th>
-                                        <th width="120">Количество необходимого трфнспорта на каждом участке</th>
+                                        <th width="240">Route name</th>
+                                        <th width="120">Delivery price</th>
+                                        <th width="120">Amount of transport types</th>
                                     </tr>
                                     <c:forEach items="${listRoutes}" var="route">
                                         <tr>
@@ -99,7 +99,7 @@
 
                             <c:if test="${empty listRoutes}">
                                 <div class="headname">
-                                    <h1>Такого маршрута нет</h1>
+                                    <h1>Route do not exists, yet</h1>
                                 </div>
                             </c:if>
 
