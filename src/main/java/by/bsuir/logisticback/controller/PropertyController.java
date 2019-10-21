@@ -86,9 +86,9 @@ public class PropertyController {
             for (Route r : this.routeArrayList) {
                 System.out.println(r.getNameOfRoute());
             }
-            priceList = (List<Price>) routeService.listOfRoute(routeArrayList, routeUser.getMass());
+            priceList = (List<Price>) routeService.listOfRoute(routeArrayList, routeUser.getMass(), routeUser.getK());
         }
-        return "redirect:http://localhost:8080/show_routes";
+        return "redirect:/show_routes";
     }
 
     @RequestMapping(value = "/carrier/showCarrier", method = RequestMethod.POST)
@@ -105,7 +105,7 @@ public class PropertyController {
             this.pointsService.add(new Points(routeCarrier.getEnd()));
         }
         this.points = pointsService.list();
-        return "redirect:http://localhost:8080/add_AB";
+        return "redirect:/add_AB";
     }
 
     @RequestMapping(value = "client", method = RequestMethod.GET)
@@ -179,11 +179,11 @@ public class PropertyController {
             routeService.add(new Route(str, ((Points) pointsService.getByLoginP(routeCarrier.getStart())).getIdPoint(), ((Points) pointsService.getByLoginP(routeCarrier.getEnd())).getIdPoint()));
             for (int i = 0; i < mapsCarriers.size(); i++) {
                 System.out.println(mapsCarriers.size());
-                Maps maps = null;
+                Maps maps;
                 if (i == 0) {
-                    Points p1, p2 = null;
-                    Route r = null;
-                    Transport t = null;
+                    Points p1, p2;
+                    Route r;
+                    Transport t;
                     p1 = (Points) pointsService.getByLoginP(routeCarrier.getStart());
                     p2 = (Points) pointsService.getByLoginP(mapsCarriers.get(i).getEndPointName());
                     r = (Route) routeService.getByLoginP(str);

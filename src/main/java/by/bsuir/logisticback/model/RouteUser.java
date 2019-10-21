@@ -4,11 +4,13 @@ public class RouteUser {
     private String start;
     private String end;
     private double mass;
+    private int k;
 
-    public RouteUser(String start, String end, double mass) {
+    public RouteUser(String start, String end, double mass, int k) {
         this.start = start;
         this.end = end;
         this.mass = mass;
+        this.k = k;
     }
 
     public RouteUser() {
@@ -36,5 +38,13 @@ public class RouteUser {
 
     public void setMass(double mass) {
         this.mass = mass;
+    }
+
+    public int getK() {
+        return k;
+    }
+
+    public void setK(int k) {
+        this.k = k;
     }
 }

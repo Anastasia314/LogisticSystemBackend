@@ -43,9 +43,9 @@ public class UserController {
         }
         currentUser = user;
         if (user.getRole().equals("Supplier"))
-            return "redirect:http://localhost:8080/carrier";
+            return "redirect:carrier";
         else
-            return "redirect:http://localhost:8080/client";
+            return "redirect:client";
     }
 
 
@@ -77,9 +77,9 @@ public class UserController {
         if (this.userService.getByLogin(user.getLogin())) {
             currentUser = (User) this.userService.getByLoginP(user.getLogin());
             if (currentUser.getRole().equals("Customer"))
-                return "redirect:http://localhost:8080/client";
+                return "redirect:/client";
             else
-                return "redirect:http://localhost:8080/carrier";
+                return "redirect:/carrier";
         } else {
             return "redirect:/users";
         }
@@ -95,7 +95,7 @@ public class UserController {
     public String getNam(Model model) {
         model.addAttribute("use", new User());
         currentUser = null;
-        return "redirect:http://localhost:8080/";
+        return "redirect:/";
     }
 
 

@@ -3,7 +3,7 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib prefix="from" uri="http://www.springframework.org/tags/form" %>
 <%@ page session="false" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 
 <html>
 <head>
@@ -28,7 +28,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <h1><a href="../index.html">Transporters</a></h1>
+            <h1><a href="../../index.jsp">Transporters</a></h1>
         </div>
         <div class="top-nav-text">
             <div class="nav-contact-w3ls"><i class="fa fa-phone" aria-hidden="true"></i><p>+375(44) 000-00-00</p></div>
@@ -74,13 +74,8 @@
                     <div class="col-md-12">
                         <h1 class="h2 page-header"
                             style="color:#8d1645; font-family: 'Lobster', cursive; margin-top: -1px;
-                            text-align: center;">Target point</h1>
+                            text-align: center;">Create cargo supply order</h1>
                         <section class="main">
-
-
-                            <div class="headname">
-                                <h1>Form for product supply</h1>
-                            </div>
 
                             <c:url var="addAction" value="/client/showClient"/>
 
@@ -110,6 +105,12 @@
                                     </form:label>
                                     <div class="col-sm-2">
                                         <form:input path="mass" pattern="^[+]?([0-9]*[.])?[0-9]+$" title="Enter valid number" class="form-control"/>
+                                    </div>
+                                    <form:label path="k" class="col-sm-2 control-label">
+                                        <spring:message text="Product transportation complexity"/>
+                                    </form:label>
+                                    <div class="col-sm-2">
+                                        <form:input path="k" type="number" step="1" min="1" max="10" title="Enter complexity coefficient" class="form-control"/>
                                     </div>
                                 </div>
 

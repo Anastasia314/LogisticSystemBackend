@@ -56,7 +56,7 @@ label{
     text-decoration: none;
     font-size: 33px;
     display: block;
-    background: #e01f3d;
+    background: #e03f2d;
     padding:20px;
     font-weight: 600;
 }
@@ -356,7 +356,7 @@ input.checkbox:checked:after {
 }
 .navbar-default {
   background:none;
-  border-color: #D1D1D1;
+  border-color: #534E38;
 }
 .navbar-default .navbar-brand {
 	color:#fff !important;
@@ -436,7 +436,7 @@ a.navbar-brand span {
     padding: 0px 0;
 }
 .header {
-    background: #D1D1D1;
+    background: #311C20;
 	padding:0 2em;
 }
 /*--//header--*/
@@ -625,7 +625,7 @@ a.navbar-brand span {
 /*-- //slider --*/
 /*-- banner-top --*/
 .w3layouts-banner-top{
-    background: url(../images/bg5.jpg) no-repeat 0px 0px;
+    background: url(../images/img2.jpg) no-repeat 0px 0px;
     background-size: cover;	
 	-webkit-background-size: cover;	
 	-moz-background-size: cover;
@@ -634,7 +634,7 @@ a.navbar-brand span {
 	min-height:700px;
 }
 .w3layouts-banner-top1{
-	background: url(../images/bg3.jpg) no-repeat 0px 0px;
+	background: url(../images/img4.jpg) no-repeat 0px 0px;
     background-size: cover;	
 	-webkit-background-size: cover;	
 	-moz-background-size: cover;
@@ -643,7 +643,7 @@ a.navbar-brand span {
 	min-height:770px;
 }
 .w3layouts-banner-top2{
-	background: url(../images/bg4.jpg) no-repeat 0px 0px;
+	background: url(../images/img2.jpg) no-repeat 0px 0px;
     background-size: cover;	
 	-webkit-background-size: cover;	
 	-moz-background-size: cover;
@@ -652,7 +652,7 @@ a.navbar-brand span {
 	min-height:770px;
 }
 .w3layouts-banner-top3{
-	background: url(../images/bg7.jpg) no-repeat 0px 0px;
+	background: url(../images/img3.jpg) no-repeat 0px 0px;
     background-size: cover;	
 	-webkit-background-size: cover;	
 	-moz-background-size: cover;
@@ -661,7 +661,7 @@ a.navbar-brand span {
 	min-height:770px;
 }
 .w3layouts-banner-top4{
-	background: url(../images/bg8.jpg) no-repeat 0px 0px;
+	background: url(../images/img1.jpg) no-repeat 0px 0px;
     background-size: cover;	
 	-webkit-background-size: cover;	
 	-moz-background-size: cover;

@@ -76,13 +76,12 @@ public class RouteServiceImpl implements ServiceRoute<Route> {
     }
 
     @Override
-    public List<Price> listOfRoute(List<Route> route, double mass) {
+    public List<Price> listOfRoute(List<Route> route, double mass, int coefficient) {
         List<Price> prices = new ArrayList<Price>();
         System.out.println(route.size());
-        List<Maps> mapsList = new ArrayList<Maps>();
-        List<Transport> transportList = new ArrayList<Transport>();
-        ArrayList<Double> doubles = new ArrayList<Double>();
-        Double price;
+        List<Maps> mapsList;
+        List<Transport> transportList;
+        double price;
         mapsList = mapsDao.list();
         transportList = transportDao.list();
         System.out.println("list of maps " + mapsList.size());
@@ -94,21 +93,21 @@ public class RouteServiceImpl implements ServiceRoute<Route> {
                 if (m.getRoute() == id) {
                     for (Transport t : transportList) {
                         if (m.getIdTransportInMaps() == t.getIdTransport()) {
-                            Double k = Math.ceil(mass / t.getMaxWeight());
-                            price = price + m.getDistance() / t.getSpeed() * t.getCoefficient() * m.getCostForHour() * k;
+                            double k = Math.ceil(mass / t.getMaxWeight());
+                            price = price + m.getDistance() / t.getSpeed() * coefficient * m.getCostForHour() * k;
                             System.out.println("price = " + price);
                             System.out.println("transport");
-                            if (t.getTransportName().equals("Автомобильный")) {
-                                desc = desc + "Авто : " + k.intValue() + " ";
+                            if (t.getTransportName().equals("Auto")) {
+                                desc = desc + "Auto: " + (int) k + " ";
                             }
-                            if (t.getTransportName().equals("Морской")) {
-                                desc = desc + "Контейнеров : " + k.intValue() + " ";
+                            if (t.getTransportName().equals("Sea")) {
+                                desc = desc + "Containers: " + (int) k + " ";
                             }
-                            if (t.getTransportName().equals("Воздушный")) {
-                                desc = desc + "Самолетов : " + k.intValue() + " ";
+                            if (t.getTransportName().equals("Air")) {
+                                desc = desc + "Aircrafts: " + (int) k + " ";
                             }
-                            if (t.getTransportName().equals("Железнодорожный")) {
-                                desc = desc + "Вагонов : " + k.intValue() + " ";
+                            if (t.getTransportName().equals("Rail")) {
+                                desc = desc + "Rail car: " + (int) k + " ";
                             }
                             System.out.println("desc" + desc);
                         }

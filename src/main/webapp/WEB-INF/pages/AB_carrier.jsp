@@ -30,7 +30,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <h1><a href="../index.jsp">Transporters</a></h1>
+            <h1><a href="../../index.jsp">Transporters</a></h1>
         </div>
         <div class="top-nav-text">
             <div class="nav-contact-w3ls"><i class="fa fa-phone" aria-hidden="true"></i><p>+375(44) 000-00-00</p></div>
@@ -76,13 +76,8 @@
                         <div class="col-md-12">
                             <h1 class="h2 page-header"
                                 style="color:#8d1645; font-family: 'Lobster', cursive; margin-top: -1px;
-                        text-align: center;">Target point</h1>
+                        text-align: center;">Create new rote</h1>
                             <section class="main">
-
-
-                                <div class="headname">
-                                    <h1>Form for route creation</h1>
-                                </div>
 
                                 <c:url var="addAction" value="/carrier/showCarrier"/>
 
@@ -91,7 +86,7 @@
 
                                     <div class="form-group">
                                         <form:label path="start" class="col-sm-2 control-label">
-                                            <spring:message text="Current point" />
+                                            <spring:message text="Start point" />
                                         </form:label>
                                         <div class="col-sm-4">
                                             <form:input path="start" pattern="(.[a-zA-Zа-яА-Я\sё,Ё_-]*)" title="Enter latin latters" class="form-control"/>
@@ -99,7 +94,7 @@
                                     </div>
                                     <div class="form-group">
                                         <form:label path="end" class="col-sm-2 control-label">
-                                            <spring:message text="Traget point"/>
+                                            <spring:message text="Finish point"/>
                                         </form:label>
                                         <div class="col-sm-4">
                                             <form:input path="end" pattern="(.[a-zA-Zа-яА-Я\s0-9,ёЁ_-]*)" title="Enter latin latters" class="form-control"/>
@@ -114,9 +109,6 @@
                                             <form:input path="quantity" pattern="^[+]?([0-9]*[.])?[0-9]+$" title="Enter number" class="form-control"/>
                                         </div>
                                     </div>
-
-
-
 
                                     <div class="form-group">
                                         <div class="col-sm-offset-2 col-sm-10">

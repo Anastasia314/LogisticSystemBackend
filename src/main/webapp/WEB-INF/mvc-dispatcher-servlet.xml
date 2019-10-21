@@ -1,10 +1,10 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
-        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd   http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
     <context:component-scan base-package="by.bsuir.logisticback"/>
 
@@ -14,23 +14,15 @@
     </bean>
 
     <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-
         <property name="location" value="db.properties"/>
-
     </bean>
 
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-
         <property name="url" value="${url}"/>
-
         <property name="driverClassName" value="${driverClassName}"/>
-
         <property name="username" value="${login}"/>
-
         <property name="password" value="${password}"/>
-
     </bean>
-
 
     <!-- Hibernate 4 SessionFactory Bean definition -->
     <bean id="hibernate4AnnotatedSessionFactory"
@@ -73,7 +65,6 @@
         <property name="transportDao" ref="transportDao"/>
     </bean>
 
-
     <bean id="pointsDao" class="by.bsuir.logisticback.dao.PointsDaoImpl">
         <property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory"/>
     </bean>
@@ -98,7 +89,6 @@
         <property name="transportDaoTransport" ref="transportDaoTransport"/>
     </bean>
 
-
     <bean id="mapsDao" class="by.bsuir.logisticback.dao.MapsDaoImpl">
         <property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory"/>
     </bean>
@@ -109,12 +99,10 @@
 
     <context:component-scan base-package="by.bsuir.logisticback"/>
 
-
     <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
         <property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory"/>
     </bean>
 
     <mvc:default-servlet-handler/>
     <mvc:annotation-driven/>
-
 </beans>
