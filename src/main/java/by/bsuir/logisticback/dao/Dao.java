@@ -1,8 +1,9 @@
-package by.bsuir.logisticback.service;
+package by.bsuir.logisticback.dao;
 
 import java.util.List;
 
-public interface Service<T> {
+
+public interface Dao<T>  {
     public void add(T t);
 
     public void update(T t);
@@ -13,11 +14,9 @@ public interface Service<T> {
 
     public boolean getByLogin(String login);
 
-    public T getByLoginP(String login);
-
     public List<T> list();
 
-    public List<T> find(String name);
+    public T getByLoginP(String login);
 
 
 }

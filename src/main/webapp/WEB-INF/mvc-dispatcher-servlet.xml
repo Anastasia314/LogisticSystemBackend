@@ -1,0 +1,108 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd   http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <context:component-scan base-package="by.bsuir.logisticback"/>
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/pages/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location" value="db.properties"/>
+    </bean>
+
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="url" value="${url}"/>
+        <property name="driverClassName" value="${driverClassName}"/>
+        <property name="username" value="${login}"/>
+        <property name="password" value="${password}"/>
+    </bean>
+
+    <!-- Hibernate 4 SessionFactory Bean definition -->
+    <bean id="hibernate4AnnotatedSessionFactory"
+          class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="annotatedClasses">
+            <list>
+                <value>by.bsuir.logisticback.model.Property</value>
+                <value>by.bsuir.logisticback.model.entity.Transport</value>
+                <value>by.bsuir.logisticback.model.entity.Maps</value>
+                <value>by.bsuir.logisticback.model.entity.Route</value>
+                <value>by.bsuir.logisticback.model.entity.Points</value>
+                <value>by.bsuir.logisticback.model.entity.User</value>
+            </list>
+        </property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect
+                </prop>
+                <prop key="hibernate.show_sql">true</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="userDao" class="by.bsuir.logisticback.dao.UserDaoImpl">
+        <property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory"/>
+    </bean>
+
+    <bean id="userService" class="by.bsuir.logisticback.service.UserServiceImpl">
+        <property name="userDao" ref="userDao"/>
+    </bean>
+
+    <bean id="routeDao" class="by.bsuir.logisticback.dao.RouteDaoImpl">
+        <property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory"/>
+    </bean>
+
+    <bean id="routeService" class="by.bsuir.logisticback.service.RouteServiceImpl">
+        <property name="routeDao" ref="routeDao"/>
+        <property name="mapsDao" ref="mapsDao"/>
+        <property name="transportDao" ref="transportDao"/>
+    </bean>
+
+    <bean id="pointsDao" class="by.bsuir.logisticback.dao.PointsDaoImpl">
+        <property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory"/>
+    </bean>
+
+    <bean id="pointsService" class="by.bsuir.logisticback.service.PointsServiceImpl">
+        <property name="pointsDao" ref="pointsDao"/>
+    </bean>
+
+    <bean id="transportDao" class="by.bsuir.logisticback.dao.TransportDaoImpl">
+        <property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory"/>
+    </bean>
+
+    <bean id="transportService" class="by.bsuir.logisticback.service.TransportServiceImpl">
+        <property name="transportDao" ref="transportDao"/>
+    </bean>
+
+    <bean id="transportDaoTransport" class="by.bsuir.logisticback.dao.TransportDaoImpl">
+        <property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory"/>
+    </bean>
+
+    <bean id="transportServiceTransport" class="by.bsuir.logisticback.service.TransportServiceImpl">
+        <property name="transportDaoTransport" ref="transportDaoTransport"/>
+    </bean>
+
+    <bean id="mapsDao" class="by.bsuir.logisticback.dao.MapsDaoImpl">
+        <property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory"/>
+    </bean>
+
+    <bean id="mapsService" class="by.bsuir.logisticback.service.MapsServiceImpl">
+        <property name="mapsDao" ref="mapsDao"/>
+    </bean>
+
+    <context:component-scan base-package="by.bsuir.logisticback"/>
+
+    <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+        <property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory"/>
+    </bean>
+
+    <mvc:default-servlet-handler/>
+    <mvc:annotation-driven/>
+</beans>

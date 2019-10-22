@@ -1,0 +1,138 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@ taglib prefix="from" uri="http://www.springframework.org/tags/form" %>
+<%@ page session="false" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<html>
+<head>
+    <title>Logistic</title>
+
+    <link rel="stylesheet" href="<c:url value="/resources/res/css/bootstrap.css" />"/>
+    <link rel="stylesheet" href="<c:url value="/resources/res/css/style.css" />"/>
+    <link rel="stylesheet" href="<c:url value="/resources/res/css/font-awesome.css" />"/>
+    <link rel="stylesheet" href="<c:url value="/resources/res/css/window.css" />"/>
+
+
+    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/autor_style.css" />"/>
+
+    <link rel="stylesheet" href="<c:url value="/resources/css/table.css" />" />
+    <link rel="stylesheet" href="<c:url value="/resources/css/modal.css" />" />
+</head>
+<body>
+<div class="header">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <h1><a href="../../index.jsp">Transporters</a></h1>
+        </div>
+        <div class="top-nav-text">
+            <div class="nav-contact-w3ls"><i class="fa fa-phone" aria-hidden="true"></i><p>+375(44) 000-00-00</p></div>
+        </div>
+        <!-- navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="<c:url value="/users/currentUser"/>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                        <c:choose>
+                            <c:when test="${user.login ne null}">
+                                ${user.login}
+                            </c:when>
+                            <c:otherwise>
+                                Profile
+                            </c:otherwise>
+                        </c:choose>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <c:choose>
+                            <c:when test="${user.login ne null}">
+                                <li><a href="<c:url value="/exit"/>" target="_self">Log out</a></li>
+                            </c:when>
+                            <c:otherwise>
+                                <li><a href="<c:url value="/autorization"/>" target="_self">Log in</a></li>
+                            </c:otherwise>
+                        </c:choose>
+                        <li><a href="<c:url value="/users"/>" target="_self">Sign in</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="w3layouts-banner-top w3layouts-banner-top1">
+    <div class="semilayer">
+        <div class="mybody">
+            <div class="container">
+                <div class="article container">
+                    <div class="row otstup">
+                        <div class="col-md-12">
+                            <h1 class="h2 page-header"
+                                style="color:#8d1645; font-family: 'Lobster', cursive; margin-top: -1px;
+                        text-align: center;">Create new rote</h1>
+                            <section class="main">
+
+                                <c:url var="addAction" value="/carrier/showCarrier"/>
+
+                                <form:form action="${addAction}" modelAttribute="routeCarrier" class="form-horizontal">
+
+
+                                    <div class="form-group">
+                                        <form:label path="start" class="col-sm-2 control-label">
+                                            <spring:message text="Start point" />
+                                        </form:label>
+                                        <div class="col-sm-4">
+                                            <form:input path="start" pattern="(.[a-zA-Zа-яА-Я\sё,Ё_-]*)" title="Enter latin latters" class="form-control"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <form:label path="end" class="col-sm-2 control-label">
+                                            <spring:message text="Finish point"/>
+                                        </form:label>
+                                        <div class="col-sm-4">
+                                            <form:input path="end" pattern="(.[a-zA-Zа-яА-Я\s0-9,ёЁ_-]*)" title="Enter latin latters" class="form-control"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <form:label path="quantity" class="col-sm-2 control-label">
+                                            <spring:message text="Additional stops"/>
+                                        </form:label>
+                                        <div class="col-sm-2">
+                                            <form:input path="quantity" pattern="^[+]?([0-9]*[.])?[0-9]+$" title="Enter number" class="form-control"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <input type="submit" class="btn btn-success"
+                                                   value="<spring:message text="Continue"/>"/>
+                                        </div>
+                                    </div>
+                                </form:form>
+                            </section>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script  src="${pageContext.request.contextPath}/resources/res/js/jquery-2.1.4.min.js"></script>
+<script  src="${pageContext.request.contextPath}/resources/res/js/bootstrap.js"></script>
+
+
+<!-- Раскомментировать для jsp -->
+<script src="${pageContext.request.contextPath}/resources/js/jquery.backstretch.min.js"></script>
+</body>
+</html>
